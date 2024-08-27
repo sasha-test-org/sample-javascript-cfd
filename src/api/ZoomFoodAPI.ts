@@ -13,10 +13,10 @@ export default class ZoomFoodAPI {
     return `${BASEURL}/image/${imageID}`;
   }
 
-  static async getCart(): Promise<MenuItem[]> {
-    const cartData = await axios.get<Promise<MenuItem[]>>(BASEURL + "/cart");
-    return cartData.data;
-  }
+  // static async getCart(): Promise<MenuItem[]> {
+  //   const cartData = await axios.get<Promise<MenuItem[]>>(BASEURL + "/cart");
+  //   return cartData.data;
+  // }
 
   static async addCartItem(item: MenuItem): Promise<AxiosResponse> {
     return axios.post(`${BASEURL}/cart`, item);
