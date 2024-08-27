@@ -11,6 +11,7 @@
       </ion-toolbar>
     </ion-header>
 
+
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
